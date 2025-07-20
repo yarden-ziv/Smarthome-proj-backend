@@ -1,0 +1,77 @@
+[
+  {
+    "id": "main-water-heater",
+    "type": "water_heater",
+    "name": "Main Water Heater",
+    "room": "Main Bath",
+    "status": "off",
+    "parameters": {
+      "temperature": 40,
+      "target_temperature": 55,
+      "is_heating": false,
+      "timer_enabled": true,
+      "scheduled_on": "06:30",
+      "scheduled_off": "08:00"
+    }
+  },
+  {
+    "id": "living-room-light",
+    "type": "light",
+    "name": "Living Room Light",
+    "room": "Living Room",
+    "status": "on",
+    "parameters": {
+      "brightness": 80,
+      "color": "#FFFFFF",
+      "is_dimmable": false,
+      "dynamic_color": true
+    }
+  },
+  {
+    "id": "bedroom-ac",
+    "type": "air_conditioner",
+    "name": "Bedroom AC",
+    "room": "Bedroom",
+    "status": "on",
+    "parameters": {
+      "temperature": 22,
+      "mode": "cool",
+      "fan_speed": "medium",
+      "swing": "auto"
+    }
+  },
+  {
+    "id": "front-door-lock",
+    "type": "door_lock",
+    "room": "General",
+    "name": "Front Door Lock",
+    "status": "locked",
+    "parameters": {
+      "auto_lock_enabled": true,
+      "battery_level": 78
+    }
+  },
+  {
+    "id": "living-room-curtains",
+    "type": "curtain",
+    "room": "Living Room",
+    "name": "Living Room Curtains",
+    "status": "closed",
+    "parameters": {
+      "position": 0
+    }
+  },
+  {
+    "id": "kitchen-light",
+    "type": "light",
+    "room": "Kitchen",
+    "name": "Kitchen Light",
+    "status": "off",
+    "parameters": {
+      "brightness": 80,
+      "color": "#FFDF8E",
+      "is_dimmable": true,
+      "dynamic_color": false
+    }
+  }
+]
