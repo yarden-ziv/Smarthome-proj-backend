@@ -197,10 +197,8 @@ app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1)
 
 # Database parameters
-uri = (
-        f"mongodb+srv://{username}:{password}" +
-        "@smart-home-db.w9dsqtr.mongodb.net/?retryWrites=true&w=majority&appName=smart-home-db"
-)
+uri = os.getenv("MONGO_URI", "mongodb://mongo:27017/smart_home")
+
 try:
     app.logger.info("Connecting to DB...")
     mongo_client = MongoClient(uri, server_api=ServerApi('1'))
